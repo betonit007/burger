@@ -6,11 +6,10 @@
         
             {{#each burgers}}
             {{#unless devoured}}
-            <p>
-            {{this.id}}. 
-
-            <button data-id="{{this.id}}" class="delBurger" name="{{this.burger_name}}">{{this.burger_name}}</button>
-            </p>
+            <div class="burgercontainer">
+            <img class="eatBurger" src="/assets/img/burg.png">
+            <button data-id="{{this.id}}" class="delBurger" name="{{this.burger_name}}">{{this.id}}.{{this.burger_name}}</button>
+            </div>
             {{/unless}}
             {{/each}}
         
@@ -25,11 +24,10 @@
         
             {{#each burgers}}
             {{#if devoured}}
-            <p>
-            {{this.id}}. 
-
-            <button data-id="{{this.id}}" class="delBurger" name="{{this.burger_name}}">{{this.burger_name}}</button>
-            </p>
+            <div class="burgercontainer">
+                <p data-id="{{this.id}}" name="{{this.burger_name}}">{{this.id}}.{{this.burger_name}}</p>
+                <img class="usedWrapper" src="/assets/img/wrapper.png">
+            </div>
             {{/if}}
             {{/each}}
         
@@ -49,7 +47,7 @@
                 <input type="text" id="burg" name="name">
             </div>
             
-            <button type="submit">Add Burger</button>
+            <button type="submit" style="margin-top: 5px">Add Burger</button>
             
         </form>
     </div>

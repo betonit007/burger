@@ -1,0 +1,34 @@
+body {
+    background-color: #C58B34;
+    height: 100%;
+    font-family: 'Indie Flower', cursive;
+    
+  }
+
+  .wrap {
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    border: 3px solid black;
+    display:flex;
+   
+  }
+
+  .container1 {
+    flex:2;
+    order:1;
+  }
+
+  .container2 {
+    flex:2;
+    order: 3;
+  }
+
+  .container3 {
+    display: block;
+    background-image: url('localhost:7500/assets/img/center.png');
+    flex:1;
+    order:2;
+    
+  }

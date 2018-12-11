@@ -6,29 +6,47 @@ body {
   }
 
   .wrap {
+    display:flex;
     height: 100%;
     width: 75%;
     background-color: white;
     margin: 0 auto;
     border: 3px solid black;
-    display:flex;
+    padding: 10px;
+    
    
   }
 
   .container1 {
-    flex:2;
+
+    flex:1;
     order:1;
+    text-align: center;
   }
 
   .container2 {
-    flex:2;
+    flex:1;
     order: 3;
+   text-align: center;
   }
 
   .container3 {
-    display: block;
-    background-image: url('localhost:7500/assets/img/center.png');
+    text-align: center;
     flex:1;
     order:2;
+    border: 2px solid black;
+    padding: 5px;
     
+  }
+
+  #pic {
+    min-width: 0;
+    margin: 5px;
+
+  }
+
+  img {
+    width: 450px;
+    max-width: 100%; 
+    max-height: 450px; 
   }
